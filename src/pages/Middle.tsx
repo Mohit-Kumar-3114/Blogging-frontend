@@ -1,7 +1,6 @@
 import { useEffect, useState } from "react";
 
 const Middle = () => {
-  const [isDropdownVisible, setDropdownVisible] = useState(false);
   const [currentImageIndex, setCurrentImageIndex] = useState(0);
 
   // Premium, stunning high-quality images for a professional look
@@ -62,9 +61,6 @@ const Middle = () => {
     };
   }, [images.length]);
 
-  const toggleDropdown = () => {
-    setDropdownVisible(!isDropdownVisible);
-  };
 
   return (
     <div className="flex flex-col min-h-screen">
