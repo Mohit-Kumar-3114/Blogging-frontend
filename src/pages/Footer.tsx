@@ -45,7 +45,7 @@ const Footer = () => {
               </a>
 
               <a
-                href=""
+                href="mailto:mohitahlawat912@gmail.com"
                 className="bg-indigo-800 p-2 rounded-full hover:bg-indigo-700 transition-colors duration-200"
                 title="Email"
               >
