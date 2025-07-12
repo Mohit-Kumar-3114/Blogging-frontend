@@ -92,7 +92,7 @@ const Footer = () => {
 
         <div className="border-t border-indigo-800 mt-8 pt-8 text-center">
           <p className="text-slate-300 font-serif">
-            &copy; {new Date().getFullYear()} BlogNest by Mohit Kumar. All rights reserved.
+            &copy; {new Date().getFullYear()} BlogNest. All rights reserved.
           </p>
         </div>
       </div>
