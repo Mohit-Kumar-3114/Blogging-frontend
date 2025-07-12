@@ -1,21 +1,99 @@
-const Footer = () =>{
-    return (
-    <footer className="bg-sky-950 p-4">
-      <div className="container mx-auto flex items-center justify-between">
-        <div className="text-slate-50 font-serif">
-        <p>&copy; {new Date().getFullYear()} BlogNest</p>
-        <p> All rights reserved.</p>
+const Footer = () => {
+  return (
+    <footer className="bg-gradient-to-b from-indigo-900 to-indigo-950 py-10 text-center lg:text-left">
+      <div className="container mx-auto px-4">
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
+          <div className="text-white">
+            <div className="flex items-center justify-center md:justify-start mb-4">
+              <div className="w-10 h-10 bg-gradient-to-br from-slate-100 to-slate-200 rounded-lg shadow-md flex items-center justify-center mr-3">
+                <svg xmlns="http://www.w3.org/2000/svg" className="h-6 w-6 text-indigo-900" viewBox="0 0 20 20" fill="currentColor">
+                  <path d="M13.586 3.586a2 2 0 112.828 2.828l-.793.793-2.828-2.828.793-.793zM11.379 5.793L3 14.172V17h2.828l8.38-8.379-2.83-2.828z" />
+                </svg>
+              </div>
+              <span className="text-3xl font-bold font-serif bg-gradient-to-r from-slate-50 to-slate-200 text-transparent bg-clip-text">BlogNest</span>
+            </div>
+            <p className="text-slate-300 font-serif max-w-xs mx-auto md:mx-0">
+              An elegant platform for writers and readers to connect, share ideas, and explore new literary perspectives.
+            </p>
+          </div>
+
+          <div className="text-white">
+            <h3 className="text-xl font-serif font-bold mb-4 text-slate-200">Connect With Us</h3>
+            <div className="flex space-x-4 justify-center md:justify-start mb-4">
+              <a
+                href="https://github.com/Mohit-Kumar-3114"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="bg-indigo-800 p-2 rounded-full hover:bg-indigo-700 transition-colors duration-200"
+                title="GitHub"
+              >
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="currentColor">
+                  <path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/>
+                </svg>
+              </a>
+
+              <a
+                href="https://www.linkedin.com/in/mohit-kumar-79866a264/"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="bg-indigo-800 p-2 rounded-full hover:bg-indigo-700 transition-colors duration-200"
+                title="LinkedIn"
+              >
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="currentColor">
+                  <path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"/>
+                </svg>
+              </a>
+
+              <a
+                href=""
+                className="bg-indigo-800 p-2 rounded-full hover:bg-indigo-700 transition-colors duration-200"
+                title="Email"
+              >
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="currentColor">
+                  <path d="M0 3v18h24v-18h-24zm21.518 2l-9.518 7.713-9.518-7.713h19.036zm-19.518 14v-11.817l10 8.104 10-8.104v11.817h-20z"/>
+                </svg>
+              </a>
+            </div>
+
+            <p className="text-slate-300 font-serif mb-4">
+              Made with ❤️ by <span className="bg-gradient-to-r from-purple-200 to-indigo-200 text-transparent bg-clip-text font-semibold">Mohit Kumar</span>
+            </p>
+
+            <div className="text-slate-300 font-serif space-y-2">
+              <p className="flex items-center">
+                <svg xmlns="http://www.w3.org/2000/svg" className="h-5 w-5 mr-2 text-indigo-300" viewBox="0 0 20 20" fill="currentColor">
+                  <path d="M2.003 5.884L10 9.882l7.997-3.998A2 2 0 0016 4H4a2 2 0 00-1.997 1.884z" />
+                  <path d="M18 8.118l-8 4-8-4V14a2 2 0 002 2h12a2 2 0 002-2V8.118z" />
+                </svg>
+                <a href="" className="hover:text-indigo-300 transition-colors duration-200">
+                  mohitahlawat912@gmail.com
+                </a>
+              </p>
+              <p className="flex items-center">
+                <svg xmlns="http://www.w3.org/2000/svg" className="h-5 w-5 mr-2 text-indigo-300" viewBox="0 0 20 20" fill="currentColor">
+                  <path fillRule="evenodd" d="M12.316 3.051a1 1 0 01.633 1.265l-4 12a1 1 0 11-1.898-.632l4-12a1 1 0 011.265-.633zM5.707 6.293a1 1 0 010 1.414L3.414 10l2.293 2.293a1 1 0 11-1.414 1.414l-3-3a1 1 0 010-1.414l3-3a1 1 0 011.414 0zm8.586 0a1 1 0 011.414 0l3 3a1 1 0 010 1.414l-3 3a1 1 0 11-1.414-1.414L16.586 10l-2.293-2.293a1 1 0 010-1.414z" clipRule="evenodd" />
+                </svg>
+                <a href="" target="_blank" rel="noopener noreferrer" className="hover:text-indigo-300 transition-colors duration-200">
+                  github.com/Mohit-Kumar-3114
+                </a>
+              </p>
+              <p className="flex items-center">
+                <svg xmlns="http://www.w3.org/2000/svg" className="h-5 w-5 mr-2 text-indigo-300" viewBox="0 0 20 20" fill="currentColor">
+                  <path fillRule="evenodd" d="M6 6V5a3 3 0 013-3h2a3 3 0 013 3v1h2a2 2 0 012 2v3.57A22.952 22.952 0 0110 13a22.95 22.95 0 01-8-1.43V8a2 2 0 012-2h2zm2-1a1 1 0 011-1h2a1 1 0 011 1v1H8V5zm1 5a1 1 0 011-1h.01a1 1 0 110 2H10a1 1 0 01-1-1z" clipRule="evenodd" />
+                  <path d="M2 13.692V16a2 2 0 002 2h12a2 2 0 002-2v-2.308A24.974 24.974 0 0110 15c-2.796 0-5.487-.46-8-1.308z" />
+                </svg>
+                <a href="" target="_blank" rel="noopener noreferrer" className="hover:text-indigo-300 transition-colors duration-200">
+                  linkedin.com/in/mohit-kumar-79866a264
+                </a>
+              </p>
+            </div>
+          </div>
         </div>
-        <div className="text-slate-50 font-serif">
-        <p>Made by- Mohit Kumar</p>
-        </div>
-        <div className="flex justify-between space-x-6">
-          <a href="https://github.com/Mohit-Kumar-3114">
-        <svg height="32" viewBox="0 0 72 72" width="32" xmlns="http://www.w3.org/2000/svg"><g fill="none" fill-rule="evenodd"><path d="M36,72 L36,72 C55.882251,72 72,55.882251 72,36 L72,36 C72,16.117749 55.882251,-3.65231026e-15 36,0 L36,0 C16.117749,3.65231026e-15 -2.4348735e-15,16.117749 0,36 L0,36 C2.4348735e-15,55.882251 16.117749,72 36,72 Z" fill="#3E75C3"/><path d="M35.9985,12 C22.746,12 12,22.7870921 12,36.096644 C12,46.7406712 18.876,55.7718301 28.4145,58.9584121 C29.6145,59.1797862 30.0525,58.4358488 30.0525,57.7973276 C30.0525,57.2250681 30.0315,55.7100863 30.0195,53.6996482 C23.343,55.1558981 21.9345,50.4693938 21.9345,50.4693938 C20.844,47.6864054 19.2705,46.9454799 19.2705,46.9454799 C17.091,45.4500754 19.4355,45.4801943 19.4355,45.4801943 C21.843,45.6503662 23.1105,47.9634994 23.1105,47.9634994 C25.2525,51.6455377 28.728,50.5823398 30.096,49.9649018 C30.3135,48.4077535 30.9345,47.3460615 31.62,46.7436831 C26.2905,46.1352808 20.688,44.0691228 20.688,34.8361671 C20.688,32.2052792 21.6225,30.0547881 23.1585,28.3696344 C22.911,27.7597262 22.0875,25.3110578 23.3925,21.9934585 C23.3925,21.9934585 25.4085,21.3459017 29.9925,24.4632101 C31.908,23.9285993 33.96,23.6620468 36.0015,23.6515052 C38.04,23.6620468 40.0935,23.9285993 42.0105,24.4632101 C46.5915,21.3459017 48.603,21.9934585 48.603,21.9934585 C49.9125,25.3110578 49.089,27.7597262 48.8415,28.3696344 C50.3805,30.0547881 51.309,32.2052792 51.309,34.8361671 C51.309,44.0917119 45.6975,46.1292571 40.3515,46.7256117 C41.2125,47.4695491 41.9805,48.9393525 41.9805,51.1877301 C41.9805,54.4089489 41.9505,57.0067059 41.9505,57.7973276 C41.9505,58.4418726 42.3825,59.1918338 43.6005,58.9554002 C53.13,55.7627944 60,46.7376593 60,36.096644 C60,22.7870921 49.254,12 35.9985,12" fill="#FFF"/></g></svg>
-        </a>
-        <a href="https://www.linkedin.com/in/mohit-kumar-79866a264">
-        <svg enable-background="new 0 0 32 32" height="32px" id="Layer_1" version="1.0" viewBox="0 0 32 32" width="32px"  xmlns="http://www.w3.org/2000/svg"><g><circle clip-rule="evenodd" cx="16" cy="16" fill="#007BB5" fill-rule="evenodd" r="16"/><g><rect fill="#FFFFFF" height="14" width="4" x="7" y="11"/><path d="M20.499,11c-2.791,0-3.271,1.018-3.499,2v-2h-4v14h4v-8c0-1.297,0.703-2,2-2c1.266,0,2,0.688,2,2v8h4v-7    C25,14,24.479,11,20.499,11z" fill="#FFFFFF"/><circle cx="9" cy="8" fill="#FFFFFF" r="2"/></g></g><g/><g/><g/><g/><g/><g/></svg>
-        </a>
+
+        <div className="border-t border-indigo-800 mt-8 pt-8 text-center">
+          <p className="text-slate-300 font-serif">
+            &copy; {new Date().getFullYear()} BlogNest by Mohit Kumar. All rights reserved.
+          </p>
         </div>
       </div>
     </footer>
